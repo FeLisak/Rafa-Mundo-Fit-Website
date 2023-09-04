@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 66px;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px 0;
+    z-index: 1;
+}
+
+header .logo {
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    width: 6.8em;
+    bottom: 0.3em;
+}
+
+header ul {
+    position: relative;
+    gap: 10px;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    float: left;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 25px;
+    display: flex;
+    position: relative;
+    font-weight: 500;
+}
+
+header ul li a:hover {
+    color: #c2c2c2;
+}
+
+header ul li a.active:hover {
+    color: #c2c2c2;
+}
+
+header ul li a.active {
+    background: var(--clr);
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+header ul li a.active::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 20px;
+    min-height: 20px;
+    background: transparent;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 0 5px var(--clr);
+    z-index: -1;
+}
+
+header ul li a.active::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 20px;
+    min-height: 20px;
+    background: transparent;
+    border-bottom-left-radius: 20px;
+    box-shadow: -5px 5px 0 5px var(--clr);
+    z-index: -1;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: var(--clr);
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    z-index: 1;
+}
+
+.home-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #03f200;
+    z-index: 1;
+}
+
+.home-content p {
+    position: relative;
+    max-width: 90%;
+    font-size: 16px;
+    color: #fff;
+    margin: 20px 0 40px;
+    z-index: 1;
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    z-index: 1;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 100%;
+    background: #03f200;
+    border: 2px solid #03f200;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #032300;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-box a:hover {
+    color: #03f200;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #032300;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home__image {
+    justify-self: center;
+    z-index: 1;
+}
+
+.home__blob {
+    width: 320px;
+    fill: #03f200;
+    filter: drop-shadow(0 12px 12px hsla(119, 100%, 47%, .2));
+}
+
+.home__img {
+    transform: translateY(20px);
+}
+
+#btnTop {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0,0,0,0.5);
+    border-radius: 50px 50px 50px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: width 0.7s;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnTop:hover {
+    width: 200px;
+    border-radius: 50px 50px 50px 50px;
+    transition: width 0.7s;
+}
+
+#btnTop i {
+    color:#03f200;
+    font-size: 2em;
+}
+
+#btnTopWpp {
+    position: fixed;
+    bottom: 76px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #25D366;
+    border-radius: 50px 50px 50px 50px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    transition: width 0.7s, bottom 0.7s;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnTopWpp:hover {
+    width: 200px;
+    border-radius: 50px 50px 50px 50px;
+    transition: width 0.7s;
+}
+
+#btnTopWpp i {
+    font-size: 2em;
+}
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 10px 20px;
+        z-index: 2;
+    }
+
+    header nav {
+        position: absolute;
+        width: 100%;
+        top: 66px;
+        left: 0;
+        background: #333;
+        display: none;
+    }
+
+    header.active nav {
+        display: initial;
+    }
+
+    header nav ul li {
+        width: 100%;
+    }
+
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuToggle::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        transform: translateY(-12px);
+        box-shadow: 0 12px #fff;
+        transition: transform 0.7s, box-shadow 0.9s;
+    }
+
+    .menuToggle::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        transform: translateY(12px);
+        transition: transform 0.7s;
+    }
+
+    header ul li a.active {
+        background: transparent;
+        color: #fff;
+    }
+
+    header ul li a.active:hover {
+        color: #fff;
+    }
+
+    header ul li a:hover {
+        color: #fff;
+    }
+
+    header ul li:hover {
+        background: rgba(0,0,0,0.25);
+    }
+
+    header ul li a.active::before {
+        box-shadow: 5px 5px 0 5px transparent;
+    }
+    
+    header ul li a.active::after {
+        box-shadow: -5px 5px 0 5px transparent;
+    }
+
+    header.active .menuToggle::before {
+        transform: rotate(45deg);
+        box-shadow: 0 0 #fff;
+        transition: transform 0.7s;
+    }
+
+    header.active .menuToggle::after {
+        transform: rotate(315deg);
+        transition: transform 0.7s;
+    }
+
+    .home__image {
+        position: absolute;
+        top: 87%;
+        z-index: 0;
+    }
+
+    .home__blob {
+        filter: drop-shadow(0 12px 12px hsla(0, 0%, 0%, 0.2));
+    }
+}
