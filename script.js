@@ -46,9 +46,11 @@ function ocultar() {
 ocultar()
 
 function aparecerTextoSubir() {
-    setTimeout(() => {
-        document.getElementById("btnTop").innerHTML = '<i class="fa-solid fa-arrow-up" aria-hidden="true"></i> &nbsp; Início';
-    }, 200)
+    if(window.screen.width >= 900) {
+        setTimeout(() => {
+            document.getElementById("btnTop").innerHTML = '<i class="fa-solid fa-arrow-up" aria-hidden="true"></i> &nbsp; Início';
+        }, 200)
+    };
 }
 function resetSubir() {
     setTimeout(() => {
@@ -74,9 +76,11 @@ function ocultarWpp() {
 ocultarWpp()
 
 function aparecerTextoWpp() {
-    setTimeout(() => {
-        document.getElementById("btnTopWpp").innerHTML = '<i class="fa-brands fa-whatsapp" aria-hidden="true"></i> &nbsp; Whatsapp';
-    }, 200)
+    if(window.screen.width >= 900) {
+        setTimeout(() => {
+            document.getElementById("btnTopWpp").innerHTML = '<i class="fa-brands fa-whatsapp" aria-hidden="true"></i> &nbsp; Whatsapp';
+        }, 200)
+    };
 }
 
 function resetWpp() {

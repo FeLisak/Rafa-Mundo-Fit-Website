@@ -19,7 +19,7 @@
                 <li><a href="#home" style="--clr:rgb(3, 27, 0);" class="active">Início</a></li>
                 <li><a href="#about" style="--clr:rgb(3, 242, 0);">Sobre</a></li>
                 <li><a href="#services" style="--clr:#333;">Alunos</a></li>
-                <li><a href="#contact" style="--clr:#03f200;">Contato</a></li>
+                <li><a href="#contact" style="--clr:rgb(3, 27, 0);">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -32,46 +32,71 @@
                 <a href="#">Fale comigo!</a>
             </div>
         </div>
-        <div class="home__image">
-            <svg class="home__blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
-                <mask id="maskBlob" mask-type="alpha">
-                   <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
-                   170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
-                   447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
-                   587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
-                   438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
-                </mask>
-                <g mask="url(#maskBlob)">
-                   <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
-                   170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
-                   447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
-                   587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
-                   438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
-             
-                   <rect x="37" width="476" height="630" fill="url(#pattern0)"/>
-                </g>
-             
-                <rect x="37" width="476" height="300" fill="url(#pattern1)"/>
-             
-                <defs>
-                   <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                      <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
-                   </pattern>
-             
-                   <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                      <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
-                   </pattern>
-             
-                   <!-- Insert your profile (recommended size: 640 x 940) -->
-                   <image class="home__img" id="imageBlob" width="640" height="925" href="Icons/Foto de Perfil - Home.png"/>
-                </defs>
-             </svg>
-        </div>
+        <img class="home_image" src="Icons/Foto de Perfil - Home.png"/>
     </section>
     <section id="about" style="--clr:#03f200;">
     </section>
     <section id="services" style="--clr:#333;">Quem já treina com o Rafa</section>
-    <section id="contact" style="--clr:#03f200;">Contato</section>
+    <section class="contact" id="contact" style="--clr:rgb(3, 27, 0);">
+        <div class="content">
+            <h2>Entre em Contato</h2>
+            <p>Preencha o formulário que entraremos em contato para agendar a sua aula experimental.</p>
+          </div>
+          <div class="container">
+            <div class="contactInfo">
+              <div class="box">
+                  <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="text">
+                    <h3>Endereço</h3>
+                    <p>São Paulo<br>Brasil</p>
+                  </div>
+              </div>
+              <div class="box">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="text">
+                  <h3>Celular</h3>
+                  <p>(11) 12345-6789</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="text">
+                  <h3>E-Mail</h3>
+                  <p>contato@rafamundofit.com.br</p>
+                </div>
+              </div>
+              <h2 class="txt">Redes Sociais</h2>
+              <ul class="sci">
+                <li><a href="http://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></li>
+              </ul>
+            </div>
+            <div class="contactForm">
+              <form action="https://formsubmit.co/fefelisak@gmail.com" method="POST">
+                <h2>Suas Informações</h2>
+                <div class="inputBox">
+                  <input type="text" name="Nome" required="required"></input>
+                  <span>Nome Completo</span>
+                </div>
+                <div class="inputBox">
+                  <input type="text" name="E-Mail" required="required"></input>
+                  <span>Email</span>
+                </div>
+                <div class="inputBox">
+                  <input type="text" name="Mensagem" required="required"></input>
+                  <span>Telefone</span>
+                </div>
+                <div class="inputBox">
+                  <input type="submit" value="Enviar"></input>
+                </div>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://sheila-lisak-lembrancinhas.vitoriakarpovas.repl.co" method="POST">
+                <input type="hidden" name="_subject" value="Novo Contato!" method="POST">
+              </form>
+            <div>    
+          </div>
+        </div>
+    </section>
 
     <div id="btnTop" onmouseover="aparecerTextoSubir();" onmouseout="resetSubir();"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></div>
 
