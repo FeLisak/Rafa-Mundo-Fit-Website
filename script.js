@@ -88,3 +88,21 @@ function resetWpp() {
         document.getElementById("btnTopWpp").innerHTML = '<i class="fa-brands fa-whatsapp" aria-hidden="true"></i>';
     }, 200)
 }
+
+btnWpp.addEventListener("click", function () {
+    setTimeout(() => {
+        window.open("https://api.whatsapp.com/send?phone=5511949700993&text=Rafa%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20Aulas%20de%20T%C3%AAnis.", '_blank')
+    }, 300);
+})
+
+// WHATSAPP DO CONTATO
+
+function whatsapp() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+
+    var wppurl = "https://api.whatsapp.com/send?phone=5511949700993&text=*MINHAS INFORMAÇÕES:* %0a*Nome:* "+ name +"%0a" + "*E-Mail:* "+ email +"%0a" + "*Telefone:* "+ phone +"%0a";
+
+    window.open(wppurl, "_blank").focus();
+}
