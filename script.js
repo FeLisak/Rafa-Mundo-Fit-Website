@@ -91,7 +91,7 @@ function resetWpp() {
 
 btnWpp.addEventListener("click", function () {
     setTimeout(() => {
-        window.open("https://api.whatsapp.com/send?phone=5511949700993&text=Rafa%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20Aulas%20de%20T%C3%AAnis.", '_blank')
+        window.open("https://api.whatsapp.com/send?phone=5511949700993&text=Rafa%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20Treinos.", '_blank')
     }, 300);
 })
 
