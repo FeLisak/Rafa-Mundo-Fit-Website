@@ -2,105 +2,286 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Raimundo | Personal Trainer</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="shortcut icon" href="Icons/ÍCONE NORMAL  VERDE.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <title>Rafael Raimundo | Personal Trainer</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.3.5/swiper-bundle.min.css" />
+  <link rel="shortcut icon" href="Icons/ÍCONE NORMAL  VERDE.png">
 </head>
 
 <body>
-    <header>
-        <img href="#" class="logo" src="Icons/LOGO VERDE - PERSONAL BRNACO.png">
-        <div class="menuToggle"></div>
-        <nav>
-            <ul>
-                <li><a href="#home" style="--clr:rgb(3, 27, 0);" class="active">Início</a></li>
-                <li><a href="#about" style="--clr:rgb(3, 242, 0);">Sobre</a></li>
-                <li><a href="#services" style="--clr:#333;">Alunos</a></li>
-                <li><a href="#contact" style="--clr:rgb(3, 27, 0);">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="home" style="--clr:rgb(3, 27, 0)" class="home">
-        <div class="home-content">
-            <h1>Rafael Raimundo</h1>
-            <h3>Personal Trainer</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare sed nunc a dictum. Ut consequat orci a neque tempus aliquet. Etiam sagittis enim ipsum, quis condimentum felis suscipit ut. Quisque lectus nibh, vestibulum et fermentum id, vehicula sit amet ex.</p>
-            <div class="btn-box">
-                <a href="#">Fale comigo!</a>
+
+  <!--HEADER-->
+
+  <header>
+    <img href="#" class="logo" src="Icons/LOGO VERDE - PERSONAL BRNACO.png">
+    <div class="menuToggle"></div>
+    <nav>
+      <ul>
+        <li><a href="#home" style="--clr: transparent;" class="active">Início</a></li>
+        <li><a href="#about" style="--clr:transparent;">Sobre</a></li>
+        <li><a href="#testimonials" style="--clr: transparent;">Alunos</a></li>
+        <li><a href="#contact" style="--clr:transparent">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--HOME-->
+
+  <section id="home" style="--clr:#111111" class="home">
+    <div class="home-content">
+      <h1>Rafael Raimundo</h1>
+      <h3>Personal Trainer</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare sed nunc a dictum. Ut consequat orci a
+        neque tempus aliquet. Etiam sagittis enim ipsum, quis condimentum felis suscipit ut. Quisque lectus nibh,
+        vestibulum et fermentum id, vehicula sit amet ex.</p>
+      <div class="btn-box">
+        <a href="#">Fale comigo!</a>
+      </div>
+    </div>
+    <img class="home_image" src="Icons/ÍCONE NORMAL  VERDE.png" />
+  </section>
+
+  <!--ABOUT-->
+
+  <section id="about" style="--clr:#333;">
+  </section>
+
+  <!--TESTIMONIALS-->
+
+  <section id="testimonials" style="--clr:#111111;">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testimonialBox">
+            <img src="Icons/quote.png" class="quote">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare sed nunc a dictum. Ut consequat
+                orci a neque tempus aliquet. Etiam sagittis enim ipsum, quis condimentum felis suscipit ut. Quisque
+                lectus
+                nibh, vestibulum et fermentum id, vehicula sit amet ex.</p>
+              <div class="details">
+                <div class="imgBx">
+                  <img src="Icons/user.jpg">
+                </div>
+                <h3>Someone Famous<br><span>Creative Designer</span></h3>
+              </div>
             </div>
-        </div>
-        <img class="home_image" src="Icons/ÍCONE NORMAL  VERDE.png"/>
-    </section>
-    <section id="about" style="--clr:#03f200;">
-    </section>
-    <section id="services" style="--clr:#333;">Quem já treina com o Rafa</section>
-    <section class="contact" id="contact" style="--clr:rgb(3, 27, 0);">
-        <div class="content">
-            <h2>Entre em Contato</h2>
-            <p>Preencha o formulário que entraremos em contato para agendar a sua aula experimental.</p>
-          </div>
-          <div class="container">
-            <div class="contactInfo">
-              <div class="box">
-                  <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
-                  <div class="text">
-                    <h3>Endereço</h3>
-                    <p>São Paulo<br>Brasil</p>
-                  </div>
-              </div>
-              <div class="box">
-                <div class="icon"><i class="fa-solid fa-phone"></i></div>
-                <div class="text">
-                  <h3>Celular</h3>
-                  <p>+55 (11) 94970-0993</p>
-                </div>
-              </div>
-              <div class="box">
-                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
-                <div class="text">
-                  <h3>E-Mail</h3>
-                  <p>rafamundofit@gmail.com</p>
-                </div>
-              </div>
-              <h2 class="txt">Redes Sociais</h2>
-              <ul class="sci">
-                <li><a href="http://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></li>
-              </ul>
-            </div>
-            <div class="contactForm">
-              <form>
-                <h2>Suas Informações</h2>
-                <div class="inputBox">
-                  <input type="text" name="Nome" id="name" required="required"></input>
-                  <span>Nome Completo</span>
-                </div>
-                <div class="inputBox">
-                  <input type="text" name="E-Mail" id="email" required="required"></input>
-                  <span>Email</span>
-                </div>
-                <div class="inputBox">
-                  <input type="text" name="Telefone" id="phone" required="required"></input>
-                  <span>Telefone</span>
-                </div>
-                <div class="inputBox">
-                  <input type="submit" onclick="whatsapp()" value="Enviar"></input>
-                </div>
-              </form>
-            <div>    
           </div>
         </div>
-    </section>
+        <div class="swiper-slide">
+          <div class="testimonialBox">
+            <img src="Icons/quote.png" class="quote">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare sed nunc a dictum. Ut consequat
+                orci a neque tempus aliquet. Etiam sagittis enim ipsum, quis condimentum felis suscipit ut. Quisque
+                lectus
+                nibh, vestibulum et fermentum id, vehicula sit amet ex.</p>
+              <div class="details">
+                <div class="imgBx">
+                  <img src="Icons/user.jpg">
+                </div>
+                <h3>Rafael<br><span>Creative Designer</span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonialBox">
+            <img src="Icons/quote.png" class="quote">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare sed nunc a dictum. Ut consequat
+                orci a neque tempus aliquet. Etiam sagittis enim ipsum, quis condimentum felis suscipit ut. Quisque
+                lectus
+                nibh, vestibulum et fermentum id, vehicula sit amet ex.</p>
+              <div class="details">
+                <div class="imgBx">
+                  <img src="Icons/user.jpg">
+                </div>
+                <h3>Felipe Lisak<br><span>Creative Designer</span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div id="btnTop" onmouseover="aparecerTextoSubir();" onmouseout="resetSubir();"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></div>
+  <!--CONTACT-->
 
-    <div id="btnTopWpp" onmouseover="aparecerTextoWpp();" onmouseout="resetWpp();"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></div>
+  <section class="contact" id="contact" style="--clr:#111111;">
+    <div class="content">
+      <h2>Entre em Contato</h2>
+      <p>Preencha o formulário que entraremos em contato para agendar a sua aula experimental.</p>
+    </div>
+    <div class="container">
+      <div class="contactInfo">
+        <div class="box">
+          <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="text">
+            <h3>Endereço</h3>
+            <p>São Paulo<br>Brasil</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="text">
+            <h3 href="tel:11949700993">Celular</h3>
+            <p href="tel:11949700993">+55 (11) 94970-0993</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="text">
+            <h3 href="mailto:rafamundofit@gmail.com">E-Mail</h3>
+            <p href="mailto:rafamundofit@gmail.com">rafamundofit@gmail.com</p>
+          </div>
+        </div>
+        <h2 class="txt">Redes Sociais</h2>
+        <ul class="sci">
+          <li><a href="http://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i
+                class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><i
+                class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="contactForm">
+        <form>
+          <h2>Suas Informações</h2>
+          <div class="inputBox">
+            <input type="text" name="Nome" id="name" required="required"></input>
+            <span>Nome Completo</span>
+          </div>
+          <div class="inputBox">
+            <input type="text" name="E-Mail" id="email" required="required"></input>
+            <span>Email</span>
+          </div>
+          <div class="inputBox">
+            <input type="text" name="Telefone" id="phone" required="required"></input>
+            <span>Telefone</span>
+          </div>
+          <div class="inputBox">
+            <input type="submit" onclick="whatsapp()" value="Enviar"></input>
+          </div>
+        </form>
+        <div>
+        </div>
+      </div>
+  </section>
 
-    <script type="text/javascript" src="script.js"></script>
-    <script src="https://kit.fontawesome.com/3aa575020a.js" crossorigin="anonymous"></script>
+  <!--FIXED BUTTONS-->
+
+  <div id="btnTop" onmouseover="aparecerTextoSubir();" onmouseout="resetSubir();"><i class="fa-solid fa-arrow-up"
+      aria-hidden="true"></i></div>
+
+  <div id="btnTopWpp" onmouseover="aparecerTextoWpp();" onmouseout="resetWpp();"><i class="fa-brands fa-whatsapp"
+      aria-hidden="true"></i></div>
+
+  <!--JAVASCRIPT-->
+
+  <script type="text/javascript" src="script.js"></script>
+  <script src="https://kit.fontawesome.com/3aa575020a.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@6.3.5/swiper-bundle.min.js"></script>
+  <script type="module">
+    var swiper = new Swiper('.swiper', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true,
+      },
+      loop: true,
+    });
+  </script>
+
+  <!-- TESTIMONIALS STYLE -->
+
+  <style>
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 320px;
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+      filter: blur(4px);
+      background: #fefefe;
+      border-radius: 10px;
+    }
+
+    .swiper-slide-active {
+      filter: blur(0px);
+      background: #fff;
+    }
+
+    .testimonialBox {
+      position: relative;
+      width: 100%;
+      padding: 40px;
+      padding-top: 90px;
+      color: #999;
+    }
+
+    .testimonialBox .quote {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      opacity: 0.2;
+    }
+
+    .testimonialBox .details {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .testimonialBox .details .imgBx {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 10px;
+    }
+
+    .testimonialBox .details .imgBx img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .testimonialBox .details h3 {
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: #03f200;
+      line-height: 1.1em;
+    }
+
+    .testimonialBox .details h3 span {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .swiper-container-3d .swiper-slide-shadow-left,
+    .swiper-container-3d .swiper-slide-shadow-right {
+      background-image: none;
+    }
+  </style>
 </body>
 
 </html>
