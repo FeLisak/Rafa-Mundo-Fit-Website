@@ -56,7 +56,7 @@ function ocultar() {
 }
 
 ocultar()
-
+ 
 function aparecerTextoSubir() {
     if(window.screen.width >= 900) {
         setTimeout(() => {
