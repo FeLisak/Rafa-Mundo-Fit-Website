@@ -10,7 +10,7 @@
 
 body {
   min-height: 100vh;
-  background-color: #111111;
+  background-color: #000;
   overflow-x: hidden;
 }
 
@@ -21,12 +21,12 @@ header {
   top: 0;
   width: 100%;
   min-height: 66px;
-  background: rgba(0, 0, 0, 0.5);
+  background: #222222;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 header .logo {
@@ -131,7 +131,7 @@ section {
   font-weight: 700;
   color: #fff;
   line-height: 1.2;
-  z-index: 0;
+  z-index: 1;
 }
 
 .home-content h3 {
@@ -139,7 +139,7 @@ section {
   font-size: 32px;
   font-weight: 700;
   color: #03f200;
-  z-index: 0;
+  z-index: 1;
 }
 
 .home-content p {
@@ -148,7 +148,7 @@ section {
   font-size: 16px;
   color: #fff;
   margin: 20px 0 40px;
-  z-index: 0;
+  z-index: 1;
 }
 
 .home-content .btn-box {
@@ -156,7 +156,7 @@ section {
   justify-content: space-between;
   width: 345px;
   height: 50px;
-  z-index: 0;
+  z-index: 1;
 }
 
 .btn-box a {
@@ -199,11 +199,11 @@ section {
 }
 
 .home_image {
-  width: 450px;
+  width: 1000px;
   position: absolute;
   display: flex;
-  top: 17%;
-  right: 12.5%;
+  top: 16%;
+  right: -12.5%;
   z-index: 0;
   opacity: 100%;
   transition: opacity 1s;
@@ -538,7 +538,7 @@ section {
   right: 20px;
   width: 50px;
   height: 50px;
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgb(51, 51, 51, 0.5);
   border-radius: 50px 50px 50px 50px;
   display: flex;
   flex-direction: row;
@@ -600,6 +600,7 @@ section {
   /* RESPONSIVE HOME */
 
   .home_image {
+    right: -70%;
     opacity: 20%;
     transition: opacity 1s;
   }
@@ -626,6 +627,8 @@ section {
 
   header.active nav {
     display: initial;
+    border-radius: 0;
+    border-top: 2px solid #000;
   }
 
   header nav ul li {
