@@ -4,9 +4,21 @@ let menuToggle = document.querySelector('.menuToggle');
 let header = document.querySelector('header');
 menuToggle.onclick = function(){
     header.classList.toggle('active')
+};
+
+// CONTACT PAGE WHATSAPP
+
+function whatsapp() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+
+    var wppurl = "https://api.whatsapp.com/send?phone=5511949700993&text=*MINHAS INFORMAÇÕES:* %0a*Nome:* "+ name +"%0a" + "*E-Mail:* "+ email +"%0a" + "*Telefone:* "+ phone +"%0a";
+
+    window.open(wppurl, "_blank").focus();
 }
 
-//SETA PARA O INÍCIO
+// BACK TO HOME FIXED BUTTON
 
 let sec = document.querySelectorAll('section');
 let links = document.querySelectorAll('ul li a');
@@ -44,11 +56,13 @@ function ocultar() {
 }
 
 ocultar()
-
+ 
 function aparecerTextoSubir() {
-    setTimeout(() => {
-        document.getElementById("btnTop").innerHTML = '<i class="fa-solid fa-arrow-up" aria-hidden="true"></i> &nbsp; Início';
-    }, 200)
+    if(window.screen.width >= 900) {
+        setTimeout(() => {
+            document.getElementById("btnTop").innerHTML = '<i class="fa-solid fa-arrow-up" aria-hidden="true"></i> &nbsp; Início';
+        }, 200)
+    };
 }
 function resetSubir() {
     setTimeout(() => {
@@ -56,7 +70,7 @@ function resetSubir() {
     }, 200)
 }
 
-//WHATSAPP FIXO NA TELA
+// FIXED WHATSAPP BUTTON
 
 const btnWpp = document.getElementById("btnTopWpp")
 
@@ -74,9 +88,11 @@ function ocultarWpp() {
 ocultarWpp()
 
 function aparecerTextoWpp() {
-    setTimeout(() => {
-        document.getElementById("btnTopWpp").innerHTML = '<i class="fa-brands fa-whatsapp" aria-hidden="true"></i> &nbsp; Whatsapp';
-    }, 200)
+    if(window.screen.width >= 900) {
+        setTimeout(() => {
+            document.getElementById("btnTopWpp").innerHTML = '<i class="fa-brands fa-whatsapp" aria-hidden="true"></i> &nbsp; Whatsapp';
+        }, 200)
+    };
 }
 
 function resetWpp() {
@@ -84,3 +100,9 @@ function resetWpp() {
         document.getElementById("btnTopWpp").innerHTML = '<i class="fa-brands fa-whatsapp" aria-hidden="true"></i>';
     }, 200)
 }
+
+btnWpp.addEventListener("click", function () {
+    setTimeout(() => {
+        window.open("https://api.whatsapp.com/send?phone=5511949700993&text=Rafa%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20Treinos.", '_blank')
+    }, 300);
+})
